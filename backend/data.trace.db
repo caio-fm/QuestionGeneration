@@ -1,0 +1,18 @@
+2022-10-25 01:13:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_GEN" not found (this database is empty); SQL statement:
+select appuser0_.email as email1_1_0_, appuser0_.name as name2_1_0_, appuser0_.password as password3_1_0_ from user_gen appuser0_ where appuser0_.email=? [42104-214]
+2022-10-25 01:16:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "APP_USER" not found (this database is empty); SQL statement:
+select appuser0_.email as email1_0_0_, appuser0_.name as name2_0_0_, appuser0_.password as password3_0_0_ from app_user appuser0_ where appuser0_.email=? [42104-214]
+2022-12-02 07:31:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "ORIGINAL_TEXT CHARACTER VARYING(255)": "U&'""Rebel Heart \\00e9 o d\\00e9cimo terceiro \\00e1lbum de est\\00fadio da artista ... (946)"; SQL statement:
+insert into generated_questions (id, email, original_text) values (default, ?, ?) [22001-214]
+2022-12-02 07:31:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "ORIGINAL_TEXT CHARACTER VARYING(255)": "U&'""Rebel Heart \\00e9 o d\\00e9cimo terceiro \\00e1lbum de est\\00fadio da artista ... (946)"; SQL statement:
+insert into generated_questions (id, email, original_text) values (default, ?, ?) [22001-214]
+2022-12-02 07:32:21 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "ORIGINAL_TEXT CHARACTER VARYING(255)": "'""sdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsada... (608)"; SQL statement:
+insert into generated_questions (id, email, original_text) values (default, ?, ?) [22001-214]
+2022-12-02 07:41:36 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "ORIGINAL_TEXT CHARACTER VARYING(255)": "'TEXTO DE EXEMPLOa2222TEXTO DE EXEMPLOa2222TEXTO DE EXEMPLOa2222TEXTO DE EXEMPLO... (2205)"; SQL statement:
+insert into generated_questions (id, email, original_text) values (default, ?, ?) [22001-214]
